@@ -1,0 +1,24 @@
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0 0;
+  grid-template-areas: '. . . .';
+  align-items: center;
+  min-width: 100vh;
+}
+
+.nav__item {
+  margin-left: auto;
+}
+
+.nav__item a {
+  margin: 1rem;
+}
+
+.nav__item a:hover {
+  cursor: pointer;
+  color: #121212;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: scale(2);
+}
