@@ -5,7 +5,6 @@ import styles from '../styles/Home.module.css';
 export default function Home() {
   return (
     <>
-      <Navbar />
       <div className={styles.container}>
         <h1>Welcome</h1>
         <p>
