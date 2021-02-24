@@ -1,11 +1,13 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from '../styles/Navbar.module.css';
 
 const Navbar = () => {
   return (
     <nav className={styles.navbar}>
-      <div className='logo'>
-        <h1>Ninja List</h1>
+      <div className={styles.logo}>
+        <Image src='/logo512.png' width={64} height={64} />
+        <h3>Esmaeil MIRZAEE</h3>
       </div>
       <div className={styles.nav__item}>
         <Link href='/'>

@@ -1,4 +1,5 @@
 .navbar {
+  background-color: #fff4e6;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -8,15 +9,25 @@
   min-width: 100vh;
 }
 
-.nav__item {
+.navbar .logo {
+  display: flex;
+  flex-direction: row;
+  border: #121212 1 solid;
+}
+
+.navbar .logo h3 {
+  margin-left: 0.5rem;
+}
+
+.navbar .nav__item {
   margin-left: auto;
 }
 
-.nav__item a {
+.navbar .nav__item a {
   margin: 1rem;
 }
 
-.nav__item a:hover {
+.navbar .nav__item a:hover {
   cursor: pointer;
   color: #121212;
   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);

@@ -1,11 +1,10 @@
 import Head from 'next/head';
-import Navbar from '../comps/Navbar';
-import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
     <>
-      <div className={styles.container}>
+      <Head></Head>
+      <div>
         <h1>Welcome</h1>
         <p>
           Ad quia vero occaecati occaecati.Expedita ab deserunt rem. Adipisci et
