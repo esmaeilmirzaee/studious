@@ -2,13 +2,14 @@
 
 html,
 body {
-  width: 100vh;
+  width: 100vw;
   padding: 0;
   margin: 0;
   font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   align-self: center;
   justify-self: center;
+  color: #333541;
 }
 
 a {

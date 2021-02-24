@@ -1,35 +1,69 @@
-.navbar {
-  background-color: #fff4e6;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0 0;
-  grid-template-areas: '. . . .';
-  align-items: center;
-  min-width: 100vh;
+.header li,
+.header a,
+.header h5,
+.header button {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
 }
 
-.navbar .logo {
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10%;
+  /* background-color: #fffce8; */
+  background-color: #ebedfa;
+  color: #1b1e2f;
+}
+
+.logo {
+  cursor: pointer;
   display: flex;
   flex-direction: row;
-  border: #121212 1 solid;
+  align-items: center;
 }
 
-.navbar .logo h3 {
+.logo h5 {
   margin-left: 0.5rem;
 }
 
-.navbar .nav__item {
-  margin-left: auto;
+.nav__links {
+  list-style: none;
 }
 
-.navbar .nav__item a {
-  margin: 1rem;
+.nav__links li {
+  display: inline-block;
+  padding: 0 0.5rem;
 }
 
-.navbar .nav__item a:hover {
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar button {
+  margin-left: 1rem;
+}
+
+.header button {
   cursor: pointer;
-  color: #121212;
-  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transform: scale(2);
+  padding: 0.6rem 0.8rem;
+  border: none;
+  border-radius: 10px;
+  /* background-color: rgb(111, 0, 255); */
+  background-color: #1b1e2f;
+  color: white;
+}
+
+.header button:hover {
+  background-color: rgba(27, 30, 47, 0.8);
+  transition: all 0.5s ease 0s;
+  transform: scale3d(1.1, 1.1, 1.1);
 }
