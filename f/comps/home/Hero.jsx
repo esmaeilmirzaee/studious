@@ -1,31 +1,32 @@
 import { FaHeart } from 'react-icons/fa';
+
 const Hero = () => {
   return (
     <div className='justify-center text-center'>
       <h1 className='text-4xl text-center font-black text-indigo-800'>
         Aspiring Full Stack Developer
       </h1>
-      <p className='text-xl font-medium text-indigo-600 mt-5 '>
-        <div className='flex flex-row justify-center'>
-          I design and code beautifully simple things and{' '}
-          <FaHeart className='mx-2 text-red-600' /> what I do!
-        </div>
+      <p className='flex flex-row justify-center text-xl font-medium text-indigo-600 mt-5 '>
+        I design and code beautifully simple things and{' '}
+        <FaHeart className='mx-2 text-red-600' /> what I do!
       </p>
-      <div className=''>
+      <div className='flex pt-10 justify-center'>
         <img
           src='https://esmaeilmirzaee.herokuapp.com/static/img/my__avatar.svg'
           alt='My avatar'
         />
       </div>
-      <div className=''>
+      <div className='flex pb-5 justify-center'>
         <img
           src='https://esmaeilmirzaee.herokuapp.com/static/img/hero__mac.svg'
           alt='iMac'
         />
       </div>
       <div className='my-10 border-2 border-yellow-300 rounded-md shadow-lg'>
-        <p className='text-xl pt-5'>Hi. My name is Esmaeil MIRZAEE!</p>
-        <p className='px-4 py-5 text-justify'>
+        <p className='text-xl pt-5 text-indigo-800 font-medium'>
+          Hi. My name is Esmaeil MIRZAEE.
+        </p>
+        <p className='px-4 py-5 text-justify text-indigo-800 font-light'>
           I started my journey in the field of computer and electrical
           engineering as a network engineer, which I continued the job title for
           five years. Then I continued my job as a Linux administrator for the
