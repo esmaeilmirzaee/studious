@@ -11,6 +11,33 @@ const Hero = () => {
           <FaHeart className='mx-2 text-red-600' /> what I do!
         </div>
       </p>
+      <div className=''>
+        <img
+          src='https://esmaeilmirzaee.herokuapp.com/static/img/my__avatar.svg'
+          alt='My avatar'
+        />
+      </div>
+      <div className=''>
+        <img
+          src='https://esmaeilmirzaee.herokuapp.com/static/img/hero__mac.svg'
+          alt='iMac'
+        />
+      </div>
+      <div className='my-10 border-2 border-yellow-300 rounded-md shadow-lg'>
+        <p className='text-xl pt-5'>Hi. My name is Esmaeil MIRZAEE!</p>
+        <p className='px-4 py-5 text-justify'>
+          I started my journey in the field of computer and electrical
+          engineering as a network engineer, which I continued the job title for
+          five years. Then I continued my job as a Linux administrator for the
+          next three years. During those years, I challenged every technology
+          behind each device I used. I am curious enough and have an innovative
+          mindset. So, I moved to the next epic in my life—I started to educate
+          myself programming languages. Consequently, my journey initiated as a
+          developer. I learned how to use HTML, CSS and JavaScript and then
+          ReactJS. Next, I learned ExpressJS framework and Rust programming
+          language to develop backend services.
+        </p>
+      </div>
     </div>
   );
 };
