@@ -18,9 +18,9 @@ const Navbar = () => {
             <Link href='/posts'>Posts</Link>
           </li>
         </ul>
-        <a>
+        <Link href='/signin'>
           <button>Sign In</button>
-        </a>
+        </Link>
       </nav>
     </header>
   );
