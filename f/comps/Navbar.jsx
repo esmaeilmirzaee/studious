@@ -1,26 +1,32 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import styles from '../styles/Navbar.module.css';
 
 const Navbar = () => {
   return (
-    <header className={styles.header}>
-      <div className={styles.logo}>
+    <header className='flex bg-yellow-50 bg-opacity-75  justify-between'>
+      <div className='ml-10'>
         <Image src='/logo512.png' width={64} height={64} />
         {/* <h5 style={{ visibility: 'invisible' }}>Esmaeil MIRZAEE</h5> */}
       </div>
-      <nav className={styles.navbar}>
-        <ul className={styles.nav__links}>
-          <li className={styles.nav__item}>
-            <Link href='/about'>About</Link>
+      <nav className='flex flex-row mr-10 items-center'>
+        <ul className='flex flex-row list-none items-center'>
+          <li className='mr-5 hover:text-indigo-600 focus:text-xl'>
+            <a href='/about' className=''>
+              About
+            </a>
           </li>
-          <li className={styles.nav__links}>
-            <Link href='/posts'>Posts</Link>
+          <li className='mr-5 hover:text-indigo-600 focus:text-xl'>
+            <a href='/posts' className=''>
+              Posts
+            </a>
           </li>
         </ul>
-        <Link href='/signin'>
-          <button>Sign In</button>
-        </Link>
+        <a
+          href='/signin'
+          className='mr-1 bg-indigo-700 text-indigo-100 py-3 px-6 rounded transition ease-in-out duration-500 hover:bg-indigo-100 hover:text-indigo-700'
+        >
+          Sign In
+        </a>
       </nav>
     </header>
   );
