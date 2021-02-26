@@ -1,23 +1,20 @@
-import styles from '../styles/Signin.module.css';
-
 const signin = () => {
   return (
-    <div className={styles.signin}>
-      <div className={styles.card}>
-        <h1>Welcome</h1>
-        <img src='/logo512.png' />
-        <div className={styles.inputs}>
+    <div className='flex justify-center my-10'>
+      <div className='w-96 border-2 border-indigo-400 rounded-lg p-10'>
+        <img src='/logo512.png' className='w-15' />
+        <div className=''>
           <input type='email' />
           <span></span>
           <label>Email</label>
         </div>
-        <div className={styles.inputs}>
+        <div className=''>
           <input type='password' />
           <span></span>
           <label>Password</label>
         </div>
-        <div className={styles.pass}>Forgot your password?</div>
-        <input type='submit' className={styles.button} value='Login' />
+        <div className=''>Forgot your password?</div>
+        <input type='submit' className='' value='Login' />
       </div>
     </div>
   );
