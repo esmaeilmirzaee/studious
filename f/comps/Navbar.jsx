@@ -5,7 +5,9 @@ const Navbar = () => {
   return (
     <header className='flex bg-yellow-50 bg-opacity-75  justify-between'>
       <div className='ml-10'>
-        <Image src='/logo512.png' width={64} height={64} />
+        <a href='/'>
+          <Image src='/logo512.png' width={64} height={64} />
+        </a>
         {/* <h5 style={{ visibility: 'invisible' }}>Esmaeil MIRZAEE</h5> */}
       </div>
       <nav className='flex flex-row mr-10 items-center'>
