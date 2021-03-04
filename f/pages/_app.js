@@ -11,7 +11,9 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Navbar />
       <Component {...pageProps} />
-      <Footer />
+      <footer className='absolute sticky left-0 bottom-0'>
+        <Footer />
+      </footer>
     </>
   );
 }
