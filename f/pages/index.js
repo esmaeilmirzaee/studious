@@ -1,4 +1,5 @@
 import Head from 'next/head';
+
 import Hero from '../comps/home/Hero';
 import Features from '../comps/home/Features';
 
