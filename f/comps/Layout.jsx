@@ -2,10 +2,14 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 const Layout = ({ children }) => {
   return (
-    <div className='md:flex-row '>
-      <Navbar />
-      {children}
-      <Footer />
+    <div className=''>
+      <div className=''>
+        <Navbar />
+      </div>
+      <main className='min-h-screen'>{children}</main>
+      <footer className='sticky mt-auto'>
+        <Footer />
+      </footer>
     </div>
   );
 };
